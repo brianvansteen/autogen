@@ -1,4 +1,4 @@
-# filename: stock_price_chart.py
+# filename: stock_price_chart_nvda_tsla.py
 
 # Import necessary libraries
 import requests
@@ -22,15 +22,15 @@ def get_stock_price(symbol):
     
     return dates, prices
 
-# Get historical stock price data for META and TESLA
-meta_dates, meta_prices = get_stock_price('META')
-tesla_dates, tesla_prices = get_stock_price('TSLA')
+# Get historical stock price data for NVDA and TSLA
+nvda_dates, nvda_prices = get_stock_price('NVDA')
+tsla_dates, tsla_prices = get_stock_price('TSLA')
 
 # Plot the stock price change
 plt.figure(figsize=(12, 6))
-plt.plot(meta_dates, meta_prices, label='META')
-plt.plot(tesla_dates, tesla_prices, label='TESLA')
-plt.title('META vs TESLA Stock Price Change')
+plt.plot(nvda_dates, nvda_prices, label='NVDA')
+plt.plot(tsla_dates, tsla_prices, label='TESLA')
+plt.title('NVDA vs TSLA Stock Price Change')
 plt.xlabel('Date')
 plt.ylabel('Closing Price (USD)')
 plt.legend()
