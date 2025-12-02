@@ -1,6 +1,6 @@
-# Autogen tutorials
+# Autogen Tutorials
 
-#### using PyCharm
+#### Built using PyCharm
 
-### code courtesy of:
+### Code courtesy of:
 https://github.com/tylerprogramming/autogen-beginner-course/tree/main
